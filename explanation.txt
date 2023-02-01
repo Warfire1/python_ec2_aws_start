@@ -2,7 +2,7 @@ Let’s get started!
 We have some following prerequisites for starting it:
 
 You must have installed Python3 on your system.
-You must have installed Boto3 on your system. Do prefer this blog for the setup of Boto3: https://blog.knoldus.com/introduction-to-boto3-and-its-installation/
+You must have installed Boto3 on your system. Do prefer this blog for the setup of Boto3: 𝐡𝐭𝐭𝐩𝐬://𝐛𝐥𝐨𝐠.𝐤𝐧𝐨𝐥𝐝𝐮𝐬.𝐜𝐨𝐦/𝐢𝐧𝐭𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐨𝐧-𝐭𝐨-𝐛𝐨𝐭𝐨𝟑-𝐚𝐧𝐝-𝐢𝐭𝐬-𝐢𝐧𝐬𝐭𝐚𝐥𝐥𝐚𝐭𝐢𝐨𝐧/
 Install AWS CLI and Configure it. If you want to check if you have configured it or not, you can check it like this.
 
 
