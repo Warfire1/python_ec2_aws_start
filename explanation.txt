@@ -19,14 +19,14 @@ instances = ec2.create_instances(
         InstanceType="t2.micro",
         KeyName="KeyPair1"
     )
+    
+    
 In the above script we have the following lines:
 
 Import boto3 : It is used to import boto3.
 ec2 = boto3.resource(‘ec2’) : The resource or service I am using with boto3 is ec2.
 instances = ec2.create_instances : It will create an EC2 instance.
 ImageId : It is an Amazon Machine Image (AMI) id. When we create an EC2 instance the first step is to select AMI id. And it changes according to the region you choose. Here I am using ap-south-1 (Mumbai Region). 
-
-
 
 
 So, according to your choice you have to change the ImageId in the code.
@@ -42,14 +42,20 @@ Here I am choosing t2.micro. So, you can change this in the script.
 KeyName: This will be the name of the keypair which we will use to access the created instance. So, for this you have to create a keypair and give that keypair name in this script. 
 If you want to create it using AWS CLI use the following command:
 
+
+
+
  $ aws ec2 create-key-pair --key-name KeyPair1 --query 'KeyMaterial' --output text > KeyPair1.pem 
 So, that’s all you have to do. Let’s run this script for creating EC2 instances.
 You can see here the instance is created and its status is initializing.
 
 
 
+
+
 Stop, Terminate and start EC2 instance using Boto3:
 It is also so simple. You only have to change the InstanceIds of your EC2 instance according to you. So, make the modification in the following script:
+
 
 import boto3
  
@@ -60,13 +66,13 @@ response = ec2.terminate_instances(
         'i-057e9ad0d4b3625e3',
     ],
 )
+
+
+
+
 Let’s run the code and see the result:
 
-
-
 Move to AWS Console and you can see here the instance is stopping.
-
-
 
 If you want to terminate the instance then you have to change ec2.stop_instances to ec2.terminate_instances.
 
